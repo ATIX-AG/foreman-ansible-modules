@@ -9,6 +9,7 @@ from nailgun.config import ServerConfig
 from nailgun.entities import (
     _check_for_value,
     ActivationKey,
+    Bookmark,
     Entity,
     AbstractContentViewFilter,
     CommonParameter,
@@ -401,6 +402,9 @@ def find_activation_key(module, name, organization, failsafe=False):
     activation_key = ActivationKey(name=name, organization=organization)
     return handle_find_response(module, activation_key.search(), message="No activation key found for %s" % name, failsafe=failsafe)
 
+def find_bookmark(module, name, failsafe=False):
+    bookmark = Bookmark(name=name)
+    return handle_find_response(module, bookmark.search(), message="No bookmark found for %s" % name, failsafe=failsafe)
 
 def find_package_group(module, name, failsafe=False):
     package_group = PackageGroup().search(set(), {'search': 'name="{}"'.format(name)})
