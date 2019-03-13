@@ -1,0 +1,138 @@
+interactions:
+- request:
+    body: !!python/unicode '{}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/katello/api/v2/ping
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA43OPQqAMAwF4N1TSGanCipepgStWOwfTeoivbvWzalOIY8vvLTtBcTIiWAGf0AH
+        pOKpF/XsF4RkQplfsaaIrL2TtkTjALl7pcTEe433U+ELutWooF2Ni/7Df1UIUW42H5VFJxnpoOpX
+        kHNubm9AqMANAQAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['126']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:58:51 GMT']
+      etag: [W/"a378cfeafe733f784b7033824c351900-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=aab0e6d73b0197d858a1034075b29d1c; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [6cbe71ca-10a8-4443-ae89-7010f9611c48]
+      x-runtime: ['0.227396']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"search": "name=\"test\",controller=\"job_invocations\""}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['58']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAzWLQQrCMBBF9zlFmHUW6koET2KkJHHQSszIZCJI6d2dNnX33/u8yVgLQhIynOz+
+        6BasLf7NbhXvcMfl7oA8bOLQ74qB00MZSnjh2YNgFQ8uURGmnJHVPSkOY/lQCjJSqR6gt8Si5aRb
+        KX51l5az60x8Q96UmnlNGGvLUlVfrmY2PzJbt+bCAAAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['147']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:58:52 GMT']
+      etag: [W/"e9c8383da87ae8434ff7ced4cd60c92e-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=a0b3933b03ba39b0ea741d48783eb5cb; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [eb360f51-4f32-4a33-952a-57cf762c8aba]
+      x-runtime: ['0.072891']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"controller": "job_invocations", "query": "started_at
+      > 24 hours ago", "public": true, "name": "test"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['103']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: POST
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks
+  response:
+    body: {string: !!python/unicode '{"name":"test","controller":"job_invocations","query":"started_at
+        > 24 hours ago","public":true,"id":20,"owner_id":4,"owner_type":"User"}'}
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:58:53 GMT']
+      etag: [W/"20d8b93746731d755fa43aa8255659e7"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [request_method=POST; path=/; secure; HttpOnly; SameSite=Lax, _session_id=25ea4d31e78133d607933d44015c9d8a;
+          path=/; secure; HttpOnly; SameSite=Lax]
+      status: [201 Created]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [4f0de041-9705-43a5-a032-714669400cec]
+      x-runtime: ['0.100729']
+      x-xss-protection: [1; mode=block]
+    status: {code: 201, message: Created}
+version: 1

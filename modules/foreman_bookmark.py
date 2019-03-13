@@ -158,7 +158,7 @@ def main():
 
     module.connect()
 
-    entity = find_bookmark(module, bookmark_dict['name'], failsafe=True)
+    entity = find_bookmark(module, bookmark_dict['name'], bookmark_dict['controller'], failsafe=True)
 
     bookmark_dict = sanitize_entity_dict(bookmark_dict, name_map)
 

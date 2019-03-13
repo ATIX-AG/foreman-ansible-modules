@@ -1,0 +1,96 @@
+interactions:
+- request:
+    body: !!python/unicode '{}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/katello/api/v2/ping
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA43NwQqAIAyA4XtPETt7sqDoZWSUkWQqbnYJ373s1slOY+P7WdteQIycCCbwOwgg
+        HU8z62e/ICQbyvyKJUVk4506ymmUkMUrFSbearwbCp/RLVYH42pcyg//9UL2pVl91Ac6xUg71ZKn
+        yLm5AbYXBfUNAQAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['126']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:59:13 GMT']
+      etag: [W/"3544cb081bb398e539b818ce2ce9aee6-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=f70cd2cf0349ec2c7e04695941d70704; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [dbe47b4b-7280-4c91-bc2e-e08f59d88dee]
+      x-runtime: ['0.238011']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"search": "name=\"test\",controller=\"job_invocations\""}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['58']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAzWLQQrCMBBF9zlFmHUW6k7BkxgpSRy0EjMymQhSenenTd399z5vMtaCkIQMJ7s/
+        ugVri3+zW8U73HG5OyAPmzj0u2Lg9FCGEl549iBYxYNLVIQpZ2R1T4rDWD6UgoxUqgfoLbFoOelW
+        il/dpeXsOhPfkDelZl4TxtqyVNWXq5nNDy0BBjjCAAAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['147']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:59:14 GMT']
+      etag: [W/"f90149c5a30f19d21855bd5ebde6e4fd-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=69091d9514630361bc1022845802906e; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [f5619ea9-1df4-485a-8989-fb61eefd1bb1]
+      x-runtime: ['0.079954']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

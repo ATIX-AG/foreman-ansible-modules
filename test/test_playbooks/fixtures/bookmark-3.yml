@@ -1,0 +1,190 @@
+interactions:
+- request:
+    body: !!python/unicode '{}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/katello/api/v2/ping
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA43NMQqAMAwF0N1TSGYHqSLoZUrQikVtS5O6SO+u7eZUp08+L/y6voEYORBMYHdo
+        gJS/9Kze+wYXDpfyK5bgkbU18kzV2EJsspQYeCvxbkh8RrMcymlT4kJ8+K8JkSdW69WJRjLSTqWX
+        HmKM1QOU3YP1DQEAAA==
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['127']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:58:59 GMT']
+      etag: [W/"fcbbd3c9cf6ffdaae221fc3a095e646d-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=498e403ece7f037f1236408f405f7f83; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [b915b66a-5c34-4402-85b4-456c20d7fdfa]
+      x-runtime: ['0.241944']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"search": "name=\"test\",controller=\"job_invocations\""}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['58']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA12PzQrCMAyA73uKknMPKl4c6Ft4cjK6LeikNjNNFRl7d7PNH/DW72vCR/rMGBAS
+        5yE3y40dMabqaybRuRP+ALl8i9VinkfH9VkZgrvitgDBKAXYmoIweY+s7kJV2YY71U5aCrEAmHeJ
+        RTd7fStVT32H5L2dmbhBfis1w7TCGJOXqPrQT0XIpyJY+BXV/RX1+5aQtQBRHAs2pROzM6u1OVPi
+        aNyJdKZLlW9ryIUTWmgbyPVKoEfQs0daf0Ce3VjeR40Nx2zIXrdQYnFLAQAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['216']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:59:01 GMT']
+      etag: [W/"f73d3d8835e67b241f260546aa37d40c-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=a8f3c91c5c5a54f65d01d42dbe75b8cf; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [61e2b3de-57cc-45a2-8a47-ec15c5ef2c64]
+      x-runtime: ['0.077767']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks/20
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAzWNMQ7CMAxFrxJ5zoCqThm4BXPkphYEBbs4DqhC3B13YHz/fel9gPFBkMCoG0Qo
+        wqbSGqlvd1ly5ZcUtCrcXT8H6e6mG6rRmtHCOUxzuMnQHvAq/tnG0mqBZDooQl0hTacI8mbSfND8
+        B9u3o3zpHvv+ABnvoYCJAAAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['132']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:59:01 GMT']
+      etag: [W/"20d8b93746731d755fa43aa8255659e7-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [_session_id=32713b7da6ff68bc7b9f4da5ddc92820; path=/; secure; HttpOnly;
+          SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [d5887c2d-6755-4cd1-9297-7e68ff5c154c]
+      x-runtime: ['0.077217']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"query": "started_at > 12 hours ago"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['38']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: PUT
+    uri: https://or.deploy1.dev.atix/api/v2/bookmarks/20
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAzWNMQ7CMAxFrxJ5zgAVUwZuwRy5qQVBwS6OA6oQd8cdGN9/X3ofYHwQJDDqBhGK
+        sKm0RurbXeZc+SUFrQp3189Burnphmq0ZLRwDscp3GRoD3gV/6xjbrVAMh0UoS6QpkMEeTNp3un0
+        B9vWvXzpHvv+AFE7I6GJAAAA
+    headers:
+      apipie-checksum: [8ad89255b081b6d6ea905a7af33ca1767e4c467f]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['132']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 13 Mar 2019 18:59:02 GMT']
+      etag: [W/"807eee35cc71369eb009c50f00522a19-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.20.1]
+      keep-alive: ['timeout=5, max=10000']
+      server: [Apache/2.4.6 (CentOS)]
+      set-cookie: [request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax, _session_id=8104fdb364f4305b84ebbc78fc23bae0;
+          path=/; secure; HttpOnly; SameSite=Lax]
+      status: [200 OK]
+      strict-transport-security: [max-age=631139040; includeSubdomains]
+      vary: [Accept-Encoding]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-powered-by: [Phusion Passenger 4.0.18]
+      x-request-id: [fd0837ca-cc4c-4ed2-83ce-08410b34956b]
+      x-runtime: ['0.136164']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1
